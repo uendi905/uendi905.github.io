@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+});
+
+    </script>
+    <title>Uendi Peza- Portfolio</title>
+</head>
+<body>
+<style>
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #181824;
+        color: #7562E0;
+        padding: 0px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #7562E0;
+    }
+    
+    section {
+        padding: 50px 0;
+        background-color: #1A1A29;
+    }
+    
+    .introduction {
+        text-align: left;
+        color: #EDEDEE;
+    }
+    
+    .profile picture {
+    text-align: right;
+    }
+    
+    .bio, .experience, .languages {
+        margin-bottom: 30px;
+    }
+    
+    .service {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .project {
+        margin-bottom: 30px;
+    }
+    
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin-bottom: 5px;
+    }
+    
+    input, textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    
+    button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    </style>
+    <header class="header">
+        <div class="logo"><img src="C:\Users\uendi\OneDrive\Documents\MP\Portfolio ALB Skills\-_Uendi_Peza_--removebg-preview.png"></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="introduction">
+            <h3>Hello I'm</h3>
+            <h1>Uendi Peza </h1>
+            <p>Web Developer | Designer</p>
+        </div>
+        <div class="profile picture">
+            <img src= "C:\Users\uendi\OneDrive\Documents\MP\Portfolio ALB Skills\image0-removebg-preview.png" alt="profile picture">
+        </div>
+    </section>
+
+    <section>
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>I am a student who is passionate about coding and developing new things. I mostly like training AI models and developing websites.</p>
+        </div>
+        <div class="experience">
+            <h2>Experience</h2>
+             <p>Participant in Climathon Tirana 2023</p>
+             <p>Participant in various school projects</p>
+            
+        </div>
+        <div class="languages">
+            <h2>Programming Languages</h2>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Javascript</p>
+            <p>C++</p>
+            <p>Python</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Services</h2>
+        <div class="service">
+         <p>Web Developer</p>
+        </div>
+        <div class="service">
+         <p>Software developer</p>
+        </div>
+        <div class="service">
+         <p>AI-model Trainer</p>   
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="project">
+         <h3>Foodwaste AI-manager</h3>
+         <p>Developed an AI model to help restaurants to minimise their food waste</p>
+        </div>
+        <div class="project">
+            <h3>Food delivery website</h3>
+            <p>Developed a website to deliver food to cudtomers based on their diets given by a nutritionist</p>
+        </div>
+        <div class="project">
+            <h3>Tic-Tac-Toe</h3>
+            <p>Developed a Tic-Tac-Toe game for a school project. The game was a software on a PC.</p>
+        </div>
+    </section>
+
+    <section >
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="355[0-9]{8}" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <p>Email: uendipeza@gmail.com</p>
+            <p>Phone: +355696636727</p>
+        </div>
+        <p>&copy; 2023 Uendi Peza. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
